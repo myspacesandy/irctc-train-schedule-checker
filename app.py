@@ -30,7 +30,7 @@ Your choice: """
         self.fetch_data(train_no)
 
     def fetch_data(self, train_no):
-        url = f"https://indianrailapi.com/api/v2/TrainSchedule/apikey/a7ae5a3edf35d2d569a8681c0ad67715/TrainNumber/{train_no}/"
+        url = f"https://indianrailapi.com/api/v2/TrainSchedule/apikey/{API_KEY}/TrainNumber/{train_no}/"
 
         try:
             response = requests.get(url)
